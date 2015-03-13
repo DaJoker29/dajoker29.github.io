@@ -1,0 +1,18 @@
+.content > section {
+    > h2 {
+        text-align: center;
+    }
+    border: 1px solid;
+    border-radius: $gutter;
+    margin: $gutter;
+    padding: $gutter;
+}
+
+section > section {
+    border: 1px solid;
+    border-radius: $gutter;
+    color: $purple-xd;
+    background-color: $purple-xl;
+    margin: $gutter;
+    padding: $gutter;
+}

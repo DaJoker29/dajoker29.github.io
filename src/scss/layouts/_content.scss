@@ -1,0 +1,27 @@
+.content {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.vitals {
+    display: flex;
+    flex: 1 1 auto;
+    flex-flow: column wrap;
+}
+
+.background {
+    flex: 1 1 60%;
+}
+
+.skills {
+    flex: 1 1 100%;
+}
+
+.projects {
+    flex: 1 1 100%;
+}
+
+.employment {
+    flex: 1 1 100%;
+}
