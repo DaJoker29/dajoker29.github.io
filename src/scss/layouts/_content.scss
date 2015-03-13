@@ -1,38 +1,27 @@
 .content {
-    @include media($small) {
-        max-width: $width;
-        margin: 0 auto;
-    }
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
 }
 
 .vitals {
-    @include media($small) {
-        width: 20%;
-    }
     display: flex;
+    flex: 1 1 auto;
     flex-flow: column wrap;
 }
 
 .background {
-    @include media($small) {
-        width: 60%;
-    }
+    flex: 1 1 60%;
 }
 
 .skills {
-    @include media($small) {
-        width: 20%;
-    }
+    flex: 1 1 100%;
 }
 
 .projects {
-    @include media($small) {
-        width: 30%;
-    }
+    flex: 1 1 100%;
 }
 
 .employment {
-    @include media($small) {
-        width: 20%;
-    }
+    flex: 1 1 100%;
 }

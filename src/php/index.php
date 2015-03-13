@@ -3,7 +3,7 @@
     <meta charset="UTF-8">
     <title>Dewitt's CV</title>
     <link rel="stylesheet" href="style.css">
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script>
+<!--     <script src="https://cdnjs.cloudflare.com/ajax/libs/masonry/3.2.2/masonry.pkgd.min.js"></script> -->
 </head>
 <body>
     <main class="content">
@@ -29,69 +29,43 @@
             <p>
                 I specialize in full-stack web development and design. Current UI/UX design patterns and practices. Stable applications with secure and documented APIs. Unit and Integration Testing. Server configuration and management. Implementation of popular CMSes and MVC frameworks. Web accessability standards. Content and Copy Editing. Analytics and SEO complicance, marketing and research.
             </p>
-            <ul>
-                <li>CMS</li>
-                <ul>
+            <section>
+                <ul data-category="CMS">
                     <li>WordPress</li>
                 </ul>
-                <li>Languages and Frameworks</li>
-                <ul>
+                <ul data-category="Languages and Frameworks">
                     <li>Bash/Shell</li>
                     <li>CSS</li>
-                    <ul>
-                        <li>Bootstrap</li>
-                        <li>Less</li>
-                        <li>Sass</li>
-                    </ul>
+                    <li>Bootstrap</li>
+                    <li>Less</li>
+                    <li>Sass</li>
                     <li>HTML</li>
-                    <ul>
-                        <li>Jade</li>
-                    </ul>
+                    <li>Jade</li>
                     <li>Javascript</li>
-                    <ul>
-                        <li>AJAX</li>
-                        <li>Angular.js</li>
-                        <li>Grunt</li>
-                        <li>jQuery</li>
-                        <li>Node.js</li>
-                    </ul>
+                    <li>AJAX</li>
+                    <li>Angular.js</li>
+                    <li>Grunt</li>
+                    <li>jQuery</li>
+                    <li>Node.js</li>
                     <li>MySQL</li>
                     <li>MongoDB</li>
                     <li>PHP</li>
-                    <ul>
-                        <li>Laravel</li>
-                    </ul> 
+                    <li>Laravel</li>
                 </ul>
-                <li>Office Software</li>
-                <ul>
+                <ul data-category="Office Software">
                     <li>Google Docs</li>
                     <li>Microsoft Office</li>
                     <li>Open Office</li>
                 </ul>
-                <li>Operating Systems</li>
-                <ul>
+                <ul data-category="Operating Systems">
                     <li>Linux</li>
-                    <ul>
-                        <li>Debian</li>
-                        <li>Fedora</li>
-                        <li>Mint</li>
-                        <li>Ubuntu</li>
-                    </ul>
                     <li>Microsoft Windows</li>
-                    <ul>
-                        <li>XP</li>
-                        <li>Vista</li>
-                        <li>7</li>
-                        <li>8+</li>
-                    </ul>
                 </ul>
-                <li>Servers</li>
-                <ul>
+                <ul data-category="Servers">
                     <li>Apache</li>
                     <li>nginx</li>
                 </ul>
-                <li>Software</li>
-                <ul>
+                <ul data-category="Software">
                     <li>Adobe Photoshop</li>
                     <li>Adobe Illustrator</li>
                     <li>Git</li>
@@ -99,7 +73,7 @@
                     <li>Sublime Text</li>
                     <li>vi/vim</li>
                 </ul>
-            </ul>
+            </section>
         </section>
 
         <section class="projects">
@@ -157,13 +131,13 @@
         <span>&copy; 2015 &bull; Dewitt A. Buckingham, III</span>
     </footer>
 
-    <script>
+<!--     <script>
         var container = document.querySelector('.content');
         var masonry = new Masonry( container, {
             // options
             "gutter": 24,
             "itemSelector": 'section'
         });
-    </script>
+    </script> -->
 </body>
 </html>

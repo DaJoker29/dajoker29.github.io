@@ -1,0 +1,37 @@
+.skills ul {
+    &::before {
+        content: attr(data-category);
+        font-weight: bold;
+        height: $gutter-lg;
+        left: 0;
+        position: absolute;
+        text-align: center;
+        top: 0;
+        width: 100%;
+    }
+    align-content: flex-start;
+    align-items: baseline;
+    display: flex;
+    flex: 320px;
+    flex-flow: row wrap;
+    justify-content: stretch;
+    padding: $gutter-lg 0;
+    position: relative;
+}
+
+.skills > p {
+    flex: 100%;
+}
+
+.skills li {
+    border: 2px solid;
+    border-radius: $gutter;
+    padding: $gutter-sm;
+    margin: $gutter-sm / 2;
+}
+
+.skills > section {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+}
