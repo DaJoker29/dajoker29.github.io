@@ -1,8 +1,13 @@
+// Util
+@import "util/vars";
+@import "util/mixins";
+@import "util/placeholders";
+
 // Base
-@import "base/base";
 @import "base/global";
 
 // Layouts
+@import "layouts/content";
 
 // Modules
 

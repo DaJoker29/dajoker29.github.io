@@ -1,0 +1,6 @@
+// Media Queries
+@mixin media($w) {
+    @media only screen and (min-width: #{$w}) {
+        @content;
+    }
+}
