@@ -5,6 +5,9 @@
 }
 
 .vitals {
+    >span {
+        display: block;
+    }
     display: flex;
     flex: 1 1 auto;
     flex-flow: column wrap;
