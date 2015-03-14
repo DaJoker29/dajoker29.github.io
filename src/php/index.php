@@ -30,9 +30,6 @@
                 I specialize in full-stack web development and design. Current UI/UX design patterns and practices. Stable applications with secure and documented APIs. Unit and Integration Testing. Server configuration and management. Implementation of popular CMSes and MVC frameworks. Web accessability standards. Content and Copy Editing. Analytics and SEO complicance, marketing and research.
             </p>
             <section>
-                <ul data-category="CMS">
-                    <li>WordPress</li>
-                </ul>
                 <ul data-category="Languages and Frameworks">
                     <li>Bash/Shell</li>
                     <li>CSS</li>
@@ -72,6 +69,9 @@
                     <li>GIMP</li>
                     <li>Sublime Text</li>
                     <li>vi/vim</li>
+                </ul>
+                <ul data-category="CMS">
+                    <li>WordPress</li>
                 </ul>
             </section>
         </section>

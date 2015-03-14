@@ -2,17 +2,9 @@
     > h2 {
         text-align: center;
     }
-    border: 1px solid;
+    border-style: solid;
     border-radius: $gutter;
-    margin: $gutter;
-    padding: $gutter;
-}
-
-section > section {
-    border: 1px solid;
-    border-radius: $gutter;
-    color: $purple-xd;
-    background-color: $purple-xl;
+    border-width: 2px 0;
     margin: $gutter;
     padding: $gutter;
 }
