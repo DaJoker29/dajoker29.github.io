@@ -1,0 +1,10 @@
+.content > section {
+    > h2 {
+        text-align: center;
+    }
+    border-style: solid;
+    border-radius: $gutter;
+    border-width: 2px 0;
+    margin: $gutter;
+    padding: $gutter;
+}
