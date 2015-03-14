@@ -9,13 +9,9 @@ module.exports = function(grunt) {
                 files: ['src/js/**/*.js'],
                 tasks: ['jshint', 'uglify:dev']
             },
-            php: {
-                files: ['src/php/**/*.php'],
-                tasks: ['copy']
-            },
             livereload: {
                 options: { livereload: true },
-                files: ['public/**/*']
+                files: ['*.*']
             }
         },
         sass: {
@@ -23,7 +19,6 @@ module.exports = function(grunt) {
                 expand: true,
                 cwd: 'src/scss',
                 src: ['**/*.scss'],
-                dest: 'public',
                 ext: '.css',
                 options: {
                     style: 'expanded'
@@ -33,7 +28,6 @@ module.exports = function(grunt) {
                expand: true,
                 cwd: 'src/scss',
                 src: ['**/*.scss'],
-                dest: 'public',
                 ext: '.css',
                 options: {
                     style: 'compressed',
@@ -43,15 +37,12 @@ module.exports = function(grunt) {
         },
         autoprefixer: {
             dev: {
-                src: 'public/style.css',
+                src: 'style.css',
                 map: true
             },
             prod: {
-                src: 'public/style.css'
+                src: 'style.css'
             }
-        },
-        clean: {
-            all: ['public/']
         },
         jshint: {
             options: {
@@ -80,36 +71,25 @@ module.exports = function(grunt) {
                     compress: false
                 },
                 files: {
-                    'public/script.js': ['src/js/**/*.js']
+                    'script.js': ['src/js/**/*.js']
                 }
             },
             prod: {
                 files: {
-                    'public/script.js': ['src/js/**/*.js']
+                    'script.js': ['src/js/**/*.js']
                 }
             }
-        },
-        copy: {
-            php: {
-                cwd: 'src/php',
-                src: ['**/*.php', '!**/_*.php'],
-                dest: 'public',
-                expand: true
-            }
         }
-
     });
 
     grunt.loadNpmTasks('grunt-contrib-watch');
     grunt.loadNpmTasks('grunt-autoprefixer');
     grunt.loadNpmTasks('grunt-contrib-sass');
-    grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-jshint');
     grunt.loadNpmTasks('grunt-contrib-uglify');
-    grunt.loadNpmTasks('grunt-contrib-copy');
 
     grunt.registerTask('config', 'Check configuration files for errors', ['jshint:config']);
-    grunt.registerTask('dev', 'Build development version of project', ['clean', 'copy', 'jshint', 'uglify:dev', 'sass:dev', 'autoprefixer:dev']);
-    grunt.registerTask('prod', 'Build production version of project', ['clean', 'copy', 'jshint', 'uglify:prod', 'sass:prod', 'autoprefixer:prod']);
+    grunt.registerTask('dev', 'Build development version of project', ['jshint', 'uglify:dev', 'sass:dev', 'autoprefixer:dev']);
+    grunt.registerTask('prod', 'Build production version of project', ['jshint', 'uglify:prod', 'sass:prod', 'autoprefixer:prod']);
     grunt.registerTask('default', 'Build development version and run watch server', ['dev', 'watch']);
 };
