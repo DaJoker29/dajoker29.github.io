@@ -1,0 +1,1 @@
+!function(){"use strict";"querySelector"in document&&"addEventListener"in window&&"localStorage"in window}();
