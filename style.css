@@ -20,13 +20,15 @@ h4,
 p,
 blockquote,
 figure,
+dl,
 ol,
 ul {
   margin: 0;
   padding: 0;
 }
 
-p {
+p,
+dl {
   margin: 1.5rem;
 }
 
@@ -44,9 +46,7 @@ h4 {
 a {
   text-decoration: none;
   color: #2D882D;
-  border-bottom: 1px dotted;
-  -webkit-transition: .3s;
-          transition: .3s;
+  transition: .3s;
 }
 a:hover {
   color: inherit;
@@ -59,62 +59,35 @@ img {
 }
 
 .content {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .vitals {
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
-  -webkit-flex-flow: column wrap;
-      -ms-flex-flow: column wrap;
-          flex-flow: column wrap;
+  flex: 1 1 auto;
+  flex-flow: column wrap;
+  font-size: 1.2rem;
 }
-.vitals > span {
+.vitals span {
   display: block;
 }
 
 .background {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 60%;
-      -ms-flex: 1 1 60%;
-          flex: 1 1 60%;
+  flex: 1 1 60%;
 }
 
 .skills {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 100%;
-      -ms-flex: 1 1 100%;
-          flex: 1 1 100%;
+  flex: 1 1 100%;
 }
 
 .projects {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 .employment {
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 1 auto;
-      -ms-flex: 1 1 auto;
-          flex: 1 1 auto;
+  flex: 1 1 auto;
 }
 
 footer {
@@ -124,33 +97,17 @@ footer {
 }
 
 .skills ul {
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
-  -webkit-box-align: baseline;
-  -webkit-align-items: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+  align-content: flex-start;
+  align-items: baseline;
   border-color: #55AA55;
   border-radius: 1.5rem;
   border-style: solid;
   border-width: 0 1px;
   color: #88CC88;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -webkit-flex: 1 auto;
-      -ms-flex: 1 auto;
-          flex: 1 auto;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: center;
-  -webkit-justify-content: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  flex: 1 auto;
+  flex-flow: row wrap;
+  justify-content: center;
   margin: 1.5rem;
   padding: 3rem 1.5rem 1.5rem;
   position: relative;
@@ -176,20 +133,10 @@ footer {
 }
 
 .skills > section {
-  -webkit-align-content: flex-start;
-      -ms-flex-line-pack: start;
-          align-content: flex-start;
-  display: -webkit-box;
-  display: -webkit-flex;
-  display: -ms-flexbox;
+  align-content: flex-start;
   display: flex;
-  -webkit-flex-flow: row wrap;
-      -ms-flex-flow: row wrap;
-          flex-flow: row wrap;
-  -webkit-box-pack: justify;
-  -webkit-justify-content: space-between;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-flow: row wrap;
+  justify-content: space-between;
 }
 
 .content > section {
@@ -202,3 +149,5 @@ footer {
 .content > section > h2 {
   text-align: center;
 }
+
+/*# sourceMappingURL=style.css.map */

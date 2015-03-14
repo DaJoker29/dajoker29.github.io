@@ -5,12 +5,13 @@
 }
 
 .vitals {
-    >span {
+    span {
         display: block;
     }
     display: flex;
     flex: 1 1 auto;
     flex-flow: column wrap;
+    font-size: 1.2rem;
 }
 
 .background {
