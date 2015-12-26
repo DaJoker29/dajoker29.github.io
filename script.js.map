@@ -1,1 +1,1 @@
-{"version":3,"file":"script.js","sources":["src/js/load.js"],"names":["document","window"],"mappings":"CAAA;IACI;;IAEA,IAAI,mBAAmBA,YAAY,sBAAsBC,UAAU,kBAAkBA,QAAS"}
+{"version":3,"sources":["src/js/load.js"],"names":["document","window"],"mappings":"CAAA;IACI;;IAEA,IAAI,mBAAmBA,YAAY,sBAAsBC,UAAU,kBAAkBA,QAAS","file":"script.js"}
