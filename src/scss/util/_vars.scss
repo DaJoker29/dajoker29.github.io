@@ -1,20 +1,24 @@
 // Grid & Breakpoints
-$width-sm:              320px;
-$width-md:              640px;
-$width:                 1100px;
-$small:                 720px;
-$gutter:                1.5rem;
-$gutter-lg:             $gutter * 2;
-$gutter-sm:             $gutter / 2;
+$width-sm  : 320px;
+$width-md  : 640px;
+$width     : 1100px;
+$small     : 720px;
+$gutter    : 1.5rem;
+$gutter-lg : $gutter * 2;
+$gutter-sm : $gutter / 2;
 
 // Color Scheme
-$black:                 #000;
-$gray-dd:               #111;
-$gray-d:                #222;
-$white:                 #fff;
+$black   : #000;
+$gray-dd : #111;
+$gray-d  : #222;
+$white   : #fff;
 
-$green-xl:              #88CC88;
-$green-l:               #55AA55;
-$green:                 #2D882D;
-$green-d:               #116611;
-$green-xd:              #004400;
+$green-xl : #88CC88;
+$green-l  : #55AA55;
+$green    : #2D882D;
+$green-d  : #116611;
+$green-xd : #004400;
+
+$blue   : #061539;
+$orange : #A96C37;
+$gold   : #A99637;

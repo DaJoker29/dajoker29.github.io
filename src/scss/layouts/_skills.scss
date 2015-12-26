@@ -1,6 +1,6 @@
 .skills ul {
     &::before {
-        color: $green-l;
+        color: $gold;
         content: attr(data-category);
         font-weight: bold;
         height: $gutter-lg;
@@ -12,14 +12,15 @@
     }
     align-content: flex-start;
     align-items: baseline;
-    border-color: $green-l;
+    border-color: $gold;
     border-radius: $gutter;
     border-style: solid;
     border-width: 0 1px;
-    color: $green-xl;
+    color: $gold;
     display: flex;
     flex: 1 auto;
     flex-flow: row wrap;
+    font-size: 1.2rem;
     justify-content: center;
     margin: $gutter;
     padding: $gutter-lg $gutter $gutter;
