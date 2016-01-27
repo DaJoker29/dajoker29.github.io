@@ -1,3 +1,12 @@
+// Colors
+
+$red: #EE5F5B;
+$green: #62C462;
+$blue: #5BC0DE;
+$yellow: #F89406;
+
+// Start of Code
+
 i.fa {
     padding-right: 1em;
 }
@@ -15,3 +24,37 @@ a:focus {
     }
 }
 
+div.jqcloud {
+    max-width: 100%;
+    color: #c8c8c8;
+    span.w10 {
+        color: $red;
+    }
+    span.w9 {
+        color: mix($red, $yellow);
+    }
+    span.w8 {
+        color: mix($red, $green);
+    }
+    span.w7 {
+        color: mix($red, $blue);
+    }
+    span.w6 {
+        color: $yellow;
+    }
+    span.w5 {
+        color: mix($yellow, $green);
+    }
+    span.w4 {
+        color: mix($yellow, $blue);
+    }
+    span.w3 {
+        color: $green;
+    }
+    span.w2 {
+        color: mix($green, $blue);
+    }
+    span.w1 {
+        color: $blue;
+    }
+}

@@ -15,4 +15,39 @@ a:focus {
   display: block;
 }
 
+div.jqcloud {
+  max-width: 100%;
+  color: #c8c8c8;
+}
+div.jqcloud span.w10 {
+  color: #EE5F5B;
+}
+div.jqcloud span.w9 {
+  color: #f37a31;
+}
+div.jqcloud span.w8 {
+  color: #a8925f;
+}
+div.jqcloud span.w7 {
+  color: #a5909d;
+}
+div.jqcloud span.w6 {
+  color: #F89406;
+}
+div.jqcloud span.w5 {
+  color: #adac34;
+}
+div.jqcloud span.w4 {
+  color: #aaaa72;
+}
+div.jqcloud span.w3 {
+  color: #62C462;
+}
+div.jqcloud span.w2 {
+  color: #5fc2a0;
+}
+div.jqcloud span.w1 {
+  color: #5BC0DE;
+}
+
 /*# sourceMappingURL=style.css.map */
