@@ -3,206 +3,111 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Curriculum Vitae</title>
-    <!-- <link href='https://fonts.googleapis.com/css?family=Amatic+SC|Josefin+Sans' rel='stylesheet' type='text/css'> -->
     <link rel="stylesheet" href="bootstrap.min.css">
-    <!-- <link rel="stylesheet" href="style.css"> -->
-<!--     <script src="https://cdnjs.cloudflare.com/ajax/divbs/masonry/3.2.2/masonry.pkgd.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="jqcloud.min.css">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <main class="container">
-        <div class="jumbotron">
-            <h1 class="name">Gus Buckingham</h1>
-            <p>
-                Central California </br>
-                <a href="tel:+12097409063">209.740.9063</a><br>
-                <a href="mailto:captain@zerodaedalus.net">captain@zerodaedalus.net</a><br>
-                <a href="//zerodaedalus.com">Zero Daedalus</a><br>
-                <a href="http://github.com/dajoker29">DaJoker29</a>
+        <div class="jumbotron text-center">
+            <h1 class="name">DeWitt Buckingham</h1>
+            <p class="lead">Bay Area & Central Valley</p>
+            <p class="text-left">
+                    <a href="tel:+12097409063"><i class="fa fa-phone"></i>209.740.9063</a><br>
+                    <a class="truncate" href="mailto:captain@zerodaedalus.net"><i class="fa fa-envelope"></i>Email</a><br>
+                    <a href="//zerodaedalus.com"><i class="fa fa-globe"></i>Website</a><br>
+                    <a href="http://github.com/dajoker29"><i class="fa fa-github"></i>GitHub</a>
             </p>
         </div>
         <div class="panel-group" id="main-accordion" role="tablist" aria-multiselectable="true">
             <!-- Background -->
             <div class="panel panel-info">
                 <div class="panel-heading" role="tab" id="backgroundPanel">
-                    <h3 class="panel-title">
-                        <a href="#collapseOne" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="true" aria-controls="collapseOne">Background</a>
-                    </h3>
+                    <a href="#collapseOne" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="false" aria-controls="collapseOne">
+                        <h3 class="panel-title">
+                            Background
+                        </h3>
+                    </a>
                 </div>
-                <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="#backgroundPanel">
-                    <div class="panel-body">
-                        I've been playing around on the web since a child, building websites and coding scripts for different online gaming communities I belonged to. After studying software engineering in college, I moved towards professional full stack web development and design aiming to build elegant and simply solutions.
+                <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#backgroundPanel">
+                    <div class="panel-body lead">
+                        I've been playing around on the web since a wee lad, building websites and scripts for different online gaming communities I belonged to. After studying software engineering in college, I went into full-time professional web development and design aiming to build a career in the field that I loved.
                     </div>
                 </div>
             </div>
             <!-- Skills -->
             <div class="panel panel-warning">
                 <div class="panel-heading" role="tab" id="skillsPanel">
-                    <h3 class="panel-title">
-                        <a href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="false" aria-controls="collapseTwo">Skills</a>
-                    </h3>
+                        <a href="#collapseTwo" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="true" aria-controls="collapseTwo">
+                            <h3 class="panel-title">
+                                Skills
+                            </h3>
+                        </a>
                 </div>
-                <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#skillsPanel">
+                <div id="collapseTwo" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="#skillsPanel">
                     <div class="panel-body">
                         <p class="lead">
                             I specialize in full-stack web development and design. Current UI/UX design patterns and practices. Stable applications with secure and documented APIs. Unit and Integration Testing. Server configuration and management. Implementation of popular CMSes and MVC frameworks. Web accessibility standards. Content and Copy Editing. Analytics and SEO compliance, marketing and research.
                         </p>
-                        <div class="panel-group" id="skillsAccordion" role="tablist" aria-multiselectable>
-                            <div class="panel panel-default">
-                                <div id="languages" role="tab" class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="#collapseLanguages" role="button" data-toggle="collapse" data-parent="#skillsAccordion" aria-expanded="false" aria-controls="collapseLanguages">
-                                            Languages and Preprocessors
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseLanguages" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#languages">
-                                    <div class="panel-body">
-                                        <div class="label">CSS</div>
-                                        <div class="label">HTML</div>
-                                        <div class="label">Jade</div>
-                                        <div class="label">Javascript</div>
-                                        <div class="label">Less</div>
-                                        <div class="label">MongoDB</div>
-                                        <div class="label">MySQL</div>
-                                        <div class="label">PHP</div>
-                                        <div class="label">Sass</div>
-                                        <div class="label">Shell Scripting</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div id="frameworks" role="tab" class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="#collapseFrameworks" role="button" data-toggle="collapse" data-parent="#skillsAccordion" aria-expanded="false" aria-controls="collapseFrameworks">
-                                            Frameworks
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseFrameworks" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#frameworks">
-                                    <div class="panel-body">
-                                        <div class="label">AJAX</div>
-                                        <div class="label">Angular.js</div>
-                                        <div class="label">Grunt</div>
-                                        <div class="label">jQuery</div>
-                                        <div class="label">Laravel</div>
-                                        <div class="label">Twitter Bootstrap</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div id="productivity" role="tab" class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="#collapseProductivity" role="button" data-toggle="collapse" data-parent="#skillsAccordion" aria-expanded="false" aria-controls="collapseProductivity">
-                                            Productivity
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseProductivity" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#productivity">
-                                    <div class="panel-body">
-                                        <div class="label">Google Docs</div>
-                                        <div class="label">Microsoft Office</div>
-                                        <div class="label">Open Office</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div id="os" role="tab" class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="#collapseOS" role="button" data-toggle="collapse" data-parent="#skillsAccordion" aria-expanded="false" aria-controls="collapseOS">
-                                            OS
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseOS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#os">
-                                    <div class="panel-body">
-                                        <div class="label">Linux</div>
-                                        <div class="label">Microsoft Windows</div>
-                                        <div class="label">Mac OS X</div>
-                                        <div class="label">iOS</div>
-                                        <div class="label">Android</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div id="server" role="tab" class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="#collapseServer" role="button" data-toggle="collapse" data-parent="#skillsAccordion" aria-expanded="false" aria-controls="collapseServer">
-                                            Server
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseServer" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#server">
-                                    <div class="panel-body">
-                                        <div class="label">Apache</div>
-                                        <div class="label">nginx</div>
-                                        <div class="label">Node.js</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div id="applications" role="tab" class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="#collapseApplications" role="button" data-toggle="collapse" data-parent="#skillsAccordion" aria-expanded="false" aria-controls="collapseApplications">
-                                            Applications
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseApplications" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#applications">
-                                    <div class="panel-body">
-                                        <div class="label">Adobe Photoshop</div>
-                                        <div class="label">Adobe Illustrator</div>
-                                        <div class="label">Git</div>
-                                        <div class="label">GIMP</div>
-                                        <div class="label">Sublime Text</div>
-                                        <div class="label">vi/vim</div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="panel panel-default">
-                                <div id="cms" role="tab" class="panel-heading">
-                                    <h4 class="panel-title">
-                                        <a href="#collapseCMS" role="button" data-toggle="collapse" data-parent="#skillsAccordion" aria-expanded="false" aria-controls="collapseCMS">
-                                            CMS
-                                        </a>
-                                    </h4>
-                                </div>
-                                <div id="collapseCMS" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#cms">
-                                    <div class="panel-body">
-                                        <div class="label">WordPress</div>
-                                        <div class="label">Nation Builder</div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <div class="jqcloud center-block" style="width: 750px; height: 450px;"></div>
                     </div>
                 </div>
             </div>
             <!-- Projects -->
             <div class="panel panel-success">
                 <div class="panel-heading" role="tab" id="projectsPanel">
-                    <h3 class="panel-title">
-                        <a href="#collapseThree" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="false" aria-controls="collapseThree">Projects</a>
-                    </h3>
+                        <a href="#collapseThree" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="false" aria-controls="collapseThree">
+                            <h3 class="panel-title">
+                                Projects
+                            </h3>
+                        </a>
                 </div>
                 <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#projectsPanel">
                     <div class="panel-body">
-                        <div class="panel panel-default">
-                            <div class="panel-heading">
-                                <h3 class="panel-title"><a href="//mattabron.com/enver_solar_funnel">Enver</a></h3>
-                            </div>
-                            <div class="panel-body">
-                                    This is a site I built for a energy company looking to make a big impact in the coming year. Matt from Visual Jelly, a great video production and design studio from the Bay Area, brought me onboard to code up his beautiful design using Twitter Bootstrap. Completely responsive and pixel-perfect across every screen size.
-                            </div>
+                        <h2 class="text-center">Client Work</h2>
+                        <div class="well well-sm">
+                            <h2><a href="//mattabron.com/enver_solar_funnel">Enver</a> <small> by <a href="//visualjelly.com">Visual Jelly</a></small></h2>
+                            <p></p>
+                            <span class="label label-default">Client Project</span>
+                            <span class="label label-success">Website</span>
+                            <span class="label label-warning">HTML5</span>
+                            <span class="label label-warning">CSS3</span>
+                            <p></p>
+                            <p>
+                                A very simple and elegant website designed and built for a very small real estate brokerage in the Bay Area.
+                            </p>
                         </div>
+                        <div class="well well-sm">
+                            <h2><a href="//zerodaedalus.com">JK Realty</a></h2>
+                            <p></p>
+                            <span class="label label-default">Client Project</span>
+                            <span class="label label-success">Website</span>
+                            <span class="label label-warning">HTML5</span>
+                            <span class="label label-warning">CSS3</span>
+                            <span class="label label-warning">JavaScript</span>
+                            <span class="label label-warning">Bootstrap</span>
+                            <span class="label label-warning">jQuery</span>
+                            <p></p>
+                            <p>
+                                Website developed for an energy company looking to make a splash in 2016. Collaboration with Matt from Visual Jelly. Coded entirely with Twitter Bootstrap.
+                                Completely Responsive Code.
+                            </p>
+                        </div>
+                        <h2 class="text-center">Open Source</h2>
+                        <div class="gh-i well well-sm"></div>
+                        <div class="cascade well well-sm"></div>
                     </div>
                 </div>
             </div>
             <!-- Employment -->
             <div class="panel panel-danger">
                 <div class="panel-heading" role="tab" id="employmentPanel">
-                    <h3 class="panel-title">
-                        <a href="#collapseFour" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="false" aria-controls="collapseFour">Employment</a>
-                    </h3>
+                        <a href="#collapseFour" role="button" data-toggle="collapse" data-parent="#main-accordion" aria-expanded="false" aria-controls="collapseFour">
+                            <h3 class="panel-title">
+                                Employment
+                            </h3>
+                        </a>
                 </div>
                 <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="#employmentPanel">
                     <div class="panel-body">
@@ -264,5 +169,59 @@
     </script> -->
     <script src="https://code.jquery.com/jquery-2.2.0.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha256-KXn5puMvxCw+dAYznun+drMdG1IFl3agK0p/pqT9KAo= sha512-2e8qq0ETcfWRI4HJBzQiA3UoyFk6tbNyG+qSaIBZLyW9Xf3sWZHN/lxe9fTh1U45DpPf07yj94KsUHHWe4Yk1A==" crossorigin="anonymous"></script>
+    <script src="jqcloud.min.js"></script>
+    <script src="gh-info.js"></script>
+    <script>
+        $('.gh-i').github({
+            username: 'dajoker29',
+            repo: 'gh-info'
+        });
+        $('.cascade').github({
+            username: 'dajoker29',
+            repo: 'cascade'
+        });
+
+        var words = [
+            { 'text': 'HTML5', 'weight': 10},
+            { 'text': 'CSS3', 'weight': 10},
+            { 'text': 'JavaScript', 'weight': 9},
+            { 'text': 'Jade', 'weight': 4},
+            { 'text': 'Less', 'weight': 3},
+            { 'text': 'MongoDB', 'weight': 2},
+            { 'text': 'MySQL', 'weight': 3},
+            { 'text': 'PHP', 'weight': 7},
+            { 'text': 'Sass', 'weight': 6},
+            { 'text': 'Bash', 'weight': 5},
+            { 'text': 'AJAX', 'weight': 7},
+            { 'text': 'AngularJS', 'weight': 4},
+            { 'text': 'Grunt', 'weight': 7},
+            { 'text': 'jQuery', 'weight': 8},
+            { 'text': 'Laravel', 'weight': 1},
+            { 'text': 'Bootstrap', 'weight': 9},
+            { 'text': 'Google Docs', 'weight': 6},
+            { 'text': 'MS Office', 'weight': 5},
+            { 'text': 'Open Office', 'weight': 5},
+            { 'text': 'Linux', 'weight': 9},
+            { 'text': 'Windows', 'weight': 8},
+            { 'text': 'Mac OS X', 'weight': 4},
+            { 'text': 'iOS', 'weight': 4},
+            { 'text': 'Android', 'weight': 7},
+            { 'text': 'Apache', 'weight': 7},
+            { 'text': 'nginx', 'weight': 8},
+            { 'text': 'Node.js', 'weight': 9},
+            { 'text': 'Adobe Photoshop', 'weight': 6},
+            { 'text': 'Git', 'weight': 9},
+            { 'text': 'GitHub', 'weight': 8},
+            { 'text': 'Sublime text', 'weight': 8},
+            { 'text': 'vi/vim', 'weight': 8},
+            { 'text': 'GIMP', 'weight': 7},
+            { 'text': 'WordPress', 'weight': 9},
+            { 'text': 'Nation Builder', 'weight': 3},
+        ]
+
+        $('.jqcloud').jQCloud(words, {
+            autoResize: true
+        });
+    </script>
 </body>
 </html>
