@@ -1,16 +1,17 @@
-// Util
-@import "util/vars";
-@import "util/mixins";
-@import "util/placeholders";
+i.fa {
+    padding-right: 1em;
+}
 
-// Base
-@import "base/global";
+a:focus {
+    outline: 0;
+}
 
-// Layouts
-@import "layouts/content";
-@import "layouts/footer";
-@import "layouts/skills";
-@import "layouts/employment";
+.panel-heading {
+    padding: 0;
+    > * {
+        padding: 10px 15px;
+        line-height: 1;
+        display: block;
+    }
+}
 
-// Modules
-@import "modules/section";
